@@ -2,6 +2,13 @@
  * Globals
  */
 
+@media (min-width: 1000px) {
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 .content {
     margin-top: 4rem;
 }
