@@ -14,8 +14,7 @@ footer {
 }
 
 body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* the gradient on top, adjust color and opacity to your taste */
-    url(/background.png) fixed;
+    background: url("/background.png") fixed;
 }
 
 .gradient {
@@ -67,7 +66,7 @@ body {
 }
 
 .maindiv {
-    background-color: rgba(24, 24, 24, 0);
+    background-color: rgba(24, 24, 24, 0.25);
 }
 
 .content {
