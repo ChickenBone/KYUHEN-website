@@ -14,14 +14,15 @@ footer {
 }
 
 body {
-    background: url("/background.png") fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* the gradient on top, adjust color and opacity to your taste */
+    url(/background.png) fixed;
 }
 
 .gradient {
     background: rgb(15, 32, 163);
-    background: -moz-linear-gradient(90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
-    background: -webkit-linear-gradient(90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
-    background: linear-gradient(90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
+    background: -moz-linear-gradient( 90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
+    background: -webkit-linear-gradient( 90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
+    background: linear-gradient( 90deg, rgba(15, 32, 163, 1) 14%, rgba(80, 14, 189, 1) 37%, rgba(0, 212, 255, 1) 79%, rgba(0, 255, 250, 1) 96%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0f20a3", endColorstr="#00fffa", GradientType=1);
     background-size: 400% 400%;
     -webkit-animation: GradientBG 30s ease infinite;
@@ -31,42 +32,42 @@ body {
 
 @-webkit-keyframes GradientBG {
     0% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
 }
 
 @-moz-keyframes GradientBG {
     0% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
 }
 
 @keyframes GradientBG {
     0% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%
+        background-position: 0% 50%;
     }
 }
 
 .maindiv {
-    background-color: rgba(24, 24, 24, 0.25);
+    background-color: rgba(24, 24, 24, 0);
 }
 
 .content {
@@ -74,7 +75,7 @@ body {
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .bd-placeholder-img {
@@ -93,7 +94,7 @@ body {
 
 p {
     font-weight: lighter;
-    color: rgb(230, 230, 230)
+    color: rgb(230, 230, 230);
 }
 
 .contact {
@@ -116,7 +117,7 @@ p {
     color: #fff !important;
     font-size: 1rem;
     padding: 10px;
-    width: 100%
+    width: 100%;
 }
 
 .btn-pink:hover,
@@ -132,7 +133,7 @@ p {
     color: #fff !important;
     font-size: 1rem;
     padding: 10px;
-    width: 100%
+    width: 100%;
 }
 
 .btn-green:hover,
@@ -165,22 +166,22 @@ p {
 body {
     background-color: rgba(24, 24, 24, 0);
     min-width: 100%;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .cover-container {}
 
 .nav-masthead .nav-link {
-    padding: .25rem 0;
+    padding: 0.25rem 0;
     font-weight: 700;
-    color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, 0.5);
     background-color: transparent;
-    border-bottom: .25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .nav-masthead .nav-link+.nav-link {
@@ -190,4 +191,26 @@ body {
 .nav-masthead .active {
     color: #fff;
     border-bottom-color: #fff;
+}
+
+.submission-container {
+    width: 100%;
+    height: 100%;
+    background: #292828;
+    border-radius: 10px;
+}
+
+.submission-container .top {
+    width: 100%;
+    top: 0;
+    position: relative;
+    height: 80%;
+}
+
+.submission-container .bottom {
+    width: 100%;
+    position: relative;
+    height: 20%;
+    text-align: center;
+    margin-top: 8px
 }
