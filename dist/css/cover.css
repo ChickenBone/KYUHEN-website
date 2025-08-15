@@ -14,8 +14,14 @@ footer {
 }
 
 body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* the gradient on top, adjust color and opacity to your taste */
-    url(/background.png) fixed;
+    background-color: #151d28;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .gradient {
@@ -161,12 +167,6 @@ p {
 .btn-secondary:focus {
     color: #333;
     text-shadow: none;
-}
-
-body {
-    background-color: rgba(24, 24, 24, 0);
-    min-width: 100%;
-    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .cover-container {}
